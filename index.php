@@ -26,6 +26,19 @@ if ($sql->rowCount() > 0) {
         }
     }
     
-    echo "<pre>";
-    print_r($carac);
+   $palavras = array_keys($carac);
+   $contagens = array_values($carac);
+   
+   
+    
+    
+    
+    
 }
+
+
+
+
+
+
+
