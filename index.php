@@ -29,7 +29,14 @@ if ($sql->rowCount() > 0) {
    $palavras = array_keys($carac);
    $contagens = array_values($carac);
    
+   $maior = max($contagens);
    
+   $tamanhos = array(11, 15, 20, 30);
+   
+   for ($i = 0; $i < count($palavras); $i++) {
+       $n = $contagens[$i] / $maior;
+       
+   }
     
     
     
