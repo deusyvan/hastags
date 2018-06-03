@@ -36,6 +36,8 @@ if ($sql->rowCount() > 0) {
    for ($i = 0; $i < count($palavras); $i++) {
        $n = $contagens[$i] / $maior;
        $h = ceil($n * count($tamanhos));
+       //Temos um nr entre 1 e 4 e vamos exibir
+       echo "<p style='font-size:".$tamanhos[$h-1]."px'>".$palavras[$i]."</p>";
    }
     
     
