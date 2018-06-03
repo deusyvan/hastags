@@ -25,4 +25,7 @@ if ($sql->rowCount() > 0) {
             }
         }
     }
+    
+    echo "<pre>";
+    print_r($carac);
 }
