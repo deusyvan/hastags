@@ -6,3 +6,14 @@ try {
     exit;
 }
 
+$sql = "SELECT caracteristicas FROM usuarios";
+$sql = $pdo->query($sql);
+if ($sql->rowCount() > 0) {
+    $lista = $sql->fetchAll();
+    
+    $carac = array();
+    
+    foreach ($lista as $usuario) {
+        
+    }
+}
