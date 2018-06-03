@@ -35,7 +35,7 @@ if ($sql->rowCount() > 0) {
    
    for ($i = 0; $i < count($palavras); $i++) {
        $n = $contagens[$i] / $maior;
-       
+       $h = ceil($n * count($tamanhos));
    }
     
     
