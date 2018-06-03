@@ -26,6 +26,8 @@ if ($sql->rowCount() > 0) {
         }
     }
     
+    arsort($carac);
+    
    $palavras = array_keys($carac);
    $contagens = array_values($carac);
    
