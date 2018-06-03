@@ -17,6 +17,12 @@ if ($sql->rowCount() > 0) {
         $palavras = explode(",", $usuario['caracteristicas']);
         foreach ($palavras as $palavra) {
             $palavra = trim($palavra);
+            
+            if (isset($carac[$palavra])) {
+                $carac[$palavra]++;
+            } else {
+                $carac[$palavra] = 1;
+            }
         }
     }
 }
