@@ -14,6 +14,7 @@ if ($sql->rowCount() > 0) {
     $carac = array();
     
     foreach ($lista as $usuario) {
+        $palavras = explode(",", $usuario['caracteristicas']);
         
     }
 }
