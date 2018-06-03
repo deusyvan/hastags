@@ -16,7 +16,7 @@ if ($sql->rowCount() > 0) {
     foreach ($lista as $usuario) {
         $palavras = explode(",", $usuario['caracteristicas']);
         foreach ($palavras as $palavra) {
-            
+            $palavra = trim($palavra);
         }
     }
 }
